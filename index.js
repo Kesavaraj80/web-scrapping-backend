@@ -34,8 +34,8 @@ app.listen(PORT,()=>{
     console.log("Server Started at "+PORT);
 });
 
-app.get('/',()=>{
-    Hii
+app.get('/',(req, res)=>{
+    res.send("Web Scrapping Application")
 })
 
 app.get('/flipkart',async(req, res)=>{
